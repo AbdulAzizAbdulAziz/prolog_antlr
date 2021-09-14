@@ -1,0 +1,27 @@
+father( homer, bart1).
+father( homer, bart1, lisa1).
+father( homer, bart1, lisa1, maggie1).
+father ( homer, bart2, lisa2, maggie2).
+father(granpa, homer).
+mother ( marge, bart, lisa, maggie ).
+friend(lenny, homer, kevin).
+friend(jim, kevin, milhouse).
+friend(jim, kevin).
+friend(milhouse, bart).
+pet(santaslittlehelper, simpsons).
+
+?-father (X, homer).
+?-friend(X, Y, Z).
+?-father(X, jim ).
+?-father (homer, Y ).
+?-father( Y, bart1 ).
+?-father( P, X, Y, maggie1).
+?-father( X, P, Y, Zmaggie2).
+?-father( homer, bart1, Who, maggie2).
+?-father( Who, lisa2, bart2, maggie2).
+?-father( homer, X, Y, Z).
+?-mother(marge, Who ).
+?-mother(X, lisa ).
+?-friend(X, Y).
+?-pet(X, simpsons).
+?-pet(X, Y).
